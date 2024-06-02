@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shake On Invalid Input</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <div id="errorMessage" class="error-message">Invalid Input</div>
+      <input
+        type="text"
+        id="inputField"
+        placeholder="Input Some Text"
+        required
+      />
+      <button type="button" onclick="validateInput()">Submit</button>
+    </form>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

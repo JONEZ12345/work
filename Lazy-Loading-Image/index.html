@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid">
+
+        <div class="blur-load" style="background-image: url(img/1-small.jpg);">
+            <img src="https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg" loading="lazy" />
+        </div>
+
+        <div class="blur-load" style="background-image: url(img/2-small.jpg);">
+            <img src="https://marketplace.canva.com/EAFHm4JWsu8/1/0/1600w/canva-pink-landscape-desktop-wallpaper-HGxdJA_xIx0.jpg" loading="lazy" />
+        </div>
+
+        <div class="blur-load" style="background-image: url(img/3-small.jpg);">
+            <img src="https://www.enjpg.com/img/2020/aesthetic-desktop-e1605818161180.png" loading="lazy" />
+        </div>
+
+        <div class="blur-load" style="background-image: url(img/4-small.jpg);">
+            <img src="https://e0.pxfuel.com/wallpapers/438/665/desktop-wallpaper-minimalism-sky-clouds-sun.jpg" loading="lazy" />
+        </div>
+
+      </div>
+
+<script>
+
+    const blurDivs = document.querySelectorAll(".blur-load");
+
+    blurDivs.forEach(div => {
+        const img = div.querySelector("img");
+
+        function loaded() {
+            div.classList.add("loaded");
+        }
+    
+        if (img.complete) {
+        loaded()
+        } else {
+        img.addEventListener("load", loaded)
+        }
+
+
+    });
+
+    
+    
+    </script>
+
+
+</body>
+</html>
+

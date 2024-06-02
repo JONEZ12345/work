@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.loader-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.image {
+  position: relative;
+  height: 100vh;
+}
+.center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.image img {
+  width: min(95%, 900px);
+}
+.number {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000000;
+}

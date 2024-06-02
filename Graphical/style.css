@@ -1,0 +1,94 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #207398;
+}
+
+.key {
+    font-size: 25px;
+    border: 1px solid salmon;
+    padding: 10px;
+}
+
+.wrapper {
+    background: #1B98F5;
+    width: 550px;
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #207398;
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+    
+}
+.wrapper label{
+    align-self: flex-start;
+}
+.wrapper input{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #1C8D73;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+::-webkit-input-placeholder { 
+  color: rgb(167, 167, 167);
+}
+
+.wrapper button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+}
+/* 
+.wrapper::before{
+    content: "Encryption Form";
+    color: black;
+    font-size: 19px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+  } */
+
+
+  .wrapper button:hover{
+    background: #06c59c;
+    color: white;
+  }
+
+  .wrapper #result{
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+
